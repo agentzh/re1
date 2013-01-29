@@ -1,0 +1,9 @@
+*~
+*.swp
+*.a
+*.o
+*.so
+re1
+re
+y.output
+y.tab.c
