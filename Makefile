@@ -3,18 +3,28 @@
 # license that can be found in the LICENSE file.
 
 CC=gcc
-CFLAGS=-ggdb -Wall -O2
+CFLAGS=-ggdb -Wall -O3
+
+FILE_A= libre1.a
+
+.PHONE: all clean
+
+all: re $(FILE_A)
 
 TARG=re
-OFILES=\
+LIBOFILES=\
 	backtrack.o\
 	compile.o\
-	main.o\
 	pike.o\
 	recursive.o\
 	sub.o\
 	thompson.o\
 	y.tab.o\
+
+OFILES= $(LIBOFILES) main.o
+
+$(FILE_A): $(LIBOFILES)
+	ar rcus $@ $(LIBOFILES)
 
 HFILES=\
 	regexp.h\
