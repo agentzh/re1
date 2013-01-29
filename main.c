@@ -8,11 +8,11 @@ struct {
 	char *name;
 	int (*fn)(Prog*, char*, char**, int);
 } tab[] = {
-	"recursive", recursiveprog,
-	"recursiveloop", recursiveloopprog,
-	"backtrack", backtrack,
-	"thompson", thompsonvm,
-	"pike", pikevm,
+    {"recursive", recursiveprog},
+    {"recursiveloop", recursiveloopprog},
+    {"backtrack", backtrack},
+    {"thompson", thompsonvm},
+    {"pike", pikevm},
 };
 
 void
