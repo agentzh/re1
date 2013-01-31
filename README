@@ -2,3 +2,8 @@ This is agentzh's personal fork of the re1 toy library from Russ Cox:
 
     http://code.google.com/p/re1/
 
+This re1 fork is not meant to be used for real-world apps; it solely serves
+as a (slow) benchmark baseline for my sregex library:
+
+    https://github.com/agentzh/sregex
+
